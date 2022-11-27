@@ -45,6 +45,7 @@ class createEvent : AppCompatActivity() {
     private fun createEvent(title: String, category: String, place: String,parnumber:String,description:String,userID:String) {
         val eventID: String = UUID.randomUUID().toString()
         val documentReference:DocumentReference = FirebaseFirestore.getInstance().collection("events").document(eventID)
+
         val events: HashMap<String, String> = HashMap<String, String>()
         events.put("eventID", eventID)
         events.put("hostID", userID)
