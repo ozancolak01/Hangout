@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#fff"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="5dp"
+    android:layout_marginVertical="10dp"
+    android:layout_marginHorizontal="10dp"
+    android:id="@+id/card_view"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/attendee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="name falan">
+
+    </TextView>
+
+
+</androidx.cardview.widget.CardView>

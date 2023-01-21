@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "#dbdbdb"
+    tools:context=".Profile">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+
+        android:background="@drawable/half_circle_profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ProfilePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:layout_marginEnd="80dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/library"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:shapeAppearanceOverlay="@style/roundimageview"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="TEST"
+            android:textFontWeight="@android:integer/config_longAnimTime"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ProfilePhoto"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="mail"
+            android:textFontWeight="@android:integer/config_longAnimTime"
+            android:textSize="15sp"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ProfilePhoto"
+            app:layout_constraintVertical_bias="0.556" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="?attr/actionModeCloseDrawable"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="13dp"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/secondActivityButton"
+
+        android:layout_width="304dp"
+        android:layout_height="56dp"
+
+        android:background="@drawable/btn_background"
+        android:backgroundTint="#147D8B"
+        android:paddingHorizontal="10dp"
+        android:text="Events Attended"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.082" />
+
+    <Button
+        android:id="@+id/EventsCreatedBtn"
+        android:layout_width="304dp"
+        android:layout_height="56dp"
+        android:background="@drawable/btn_background"
+        android:backgroundTint="#147D8B"
+        android:paddingHorizontal="10dp"
+        android:text="Events Created"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondActivityButton"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <Button
+        android:id="@+id/RequestBtn"
+        android:layout_width="304dp"
+        android:layout_height="56dp"
+        android:background="@drawable/btn_background"
+        android:backgroundTint="#147D8B"
+        android:paddingHorizontal="10dp"
+        android:text="Requests"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondActivityButton"
+        app:layout_constraintVertical_bias="0.533" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="140dp"
+        android:background="@drawable/round_about_me"
+
+        android:backgroundTint="#147D8B"
+        android:fontFamily="sans-serif-medium"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="20dp"
+        android:text="Lorem ipsum falan filan asfkja sflkasjkflasjklfsajklfasjkl"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.131" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

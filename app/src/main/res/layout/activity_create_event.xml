@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".createEvent"
+    tools:ignore="ExtraText">
+
+
+    <TextView
+        android:id="@+id/view2"
+        android:layout_width="413dp"
+        android:layout_height="105dp"
+        android:background="#147c8c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/titleRequest"
+        android:layout_width="146dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="144dp"
+        android:text="Enter Event Title:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/edt_title"
+        android:layout_width="204dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="128dp"
+        android:hint="Title"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/titleRequest"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/dateRequest"
+        android:layout_width="146dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:text="Enter Event Date:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleRequest"
+        tools:ignore="HardcodedText" />
+
+
+    <EditText
+        android:id="@+id/edt_date"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="12dp"
+        android:hint="Date"
+        android:inputType="date"
+        app:layout_constraintStart_toEndOf="@+id/dateRequest"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_title"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/timeRequest"
+        android:layout_width="146dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:text="Enter Event Time:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateRequest"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/edt_time"
+        android:layout_width="199dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:hint="Time"
+        android:inputType="time"
+        app:layout_constraintStart_toEndOf="@+id/timeRequest"
+        app:layout_constraintTop_toBottomOf="@+id/edt_date"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <EditText
+        android:id="@+id/eventdetails"
+        android:layout_width="159dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="Create Event"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/backPage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="72dp"
+        android:outlineSpotShadowColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/eventdetails"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+
+    <TextView
+        android:id="@+id/descriptionRequest"
+        android:layout_width="115dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="28dp"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="Description\nabout\ event:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.005"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parRequest"
+        tools:ignore="HardcodedText,TextViewEdits" />
+
+
+    <Switch
+        android:id="@+id/SW"
+        android:layout_width="154dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Private: "
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionRequest"
+        tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/parRequest"
+        android:layout_width="209dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:text="Enter Participant Number:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeRequest"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/edt_description"
+        android:layout_width="232dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="36dp"
+        android:gravity="start|top"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/descriptionRequest"
+        app:layout_constraintTop_toBottomOf="@+id/edt_par_number"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edt_par_number"
+        android:layout_width="163dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Par. Number"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_time"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:background="#147c8c"
+        android:text="FINISH"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+
+    <Spinner
+        android:id="@+id/spinnerC"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <Spinner
+        android:id="@+id/spinnerP"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
